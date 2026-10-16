@@ -1,0 +1,5 @@
+# GitHub Pages собирает сайт Jekyll'ом: папки на «_» (_content, _tools) он не публикует сам, остальное служебное — здесь
+exclude:
+  - ubv.py
+  - README.md
+  - 00_Гайд_GitHub_Pages.md

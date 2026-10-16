@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UBV-AS-2026-01 · Сравнение прошивок для tinywhoop — UbVProject</title>
+<meta name="description" content="94 вопроса ГК «Геоскан» к автопилоту гоночного tinywhoop и ответ на каждый: как он решён в ArduPilot, PX4, Betaflight и INAV.">
+<link rel="canonical" href="https://ubvproject.github.io/docs/ubv-as-2026-01/">
+<meta property="og:site_name" content="UbVProject">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UBV-AS-2026-01 · Сравнение прошивок для tinywhoop">
+<meta property="og:description" content="94 вопроса ГК «Геоскан» к автопилоту гоночного tinywhoop и ответ на каждый: как он решён в ArduPilot, PX4, Betaflight и INAV.">
+<meta property="og:url" content="https://ubvproject.github.io/docs/ubv-as-2026-01/">
+<meta property="og:image" content="https://ubvproject.github.io/docs/ubv-as-2026-01/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="../../"><svg aria-hidden="true" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#2b5741" stroke-width="7.5"><circle cx="27" cy="27" r="18"/><circle cx="73" cy="27" r="18"/><circle cx="27" cy="73" r="18"/><circle cx="73" cy="73" r="18"/></g><rect x="40" y="40" width="20" height="20" fill="#2b5741"/></svg><span>UBVPROJECT</span></a>
+  <nav><a href="../../docs/" class="on">Документы</a><a href="https://t.me/UbVsevolod" rel="noopener">Telegram ↗</a></nav>
+</div></header>
+<main class="wrap">
+<div class="crumbs"><a href="../../">Главная</a> / <a href="../../docs/">Документы</a> / UBV-AS-2026-01</div>
+<article class="doc">
+  <div class="doc-main">
+    <div class="kind">Аналитическая справка</div>
+    <h1>Сравнительный анализ полётных прошивок ArduPilot, PX4, Betaflight и INAV для класса tinywhoop</h1>
+    <p class="sub">Ответы на вопросы к функциональным требованиям автопилота гоночного FPV-квадрокоптера</p>
+    <div class="actions">
+      <a class="btn" href="UBV-AS-2026-01.pdf">Открыть PDF<small>2,6 МБ</small></a>
+      
+    </div>
+    <table class="kv"><tr><td class="k">Обозначение</td><td><code>UBV-AS-2026-01</code>, редакция 2.0</td></tr><tr><td class="k">Дата</td><td>03.10.2026</td></tr><tr><td class="k">Подготовлено</td><td>по запросу ГК «Геоскан»</td></tr><tr><td class="k">Объём</td><td>33 страницы, PDF 2,6 МБ</td></tr></table>
+    <h2>Аннотация</h2>
+    <p>Справка отвечает на 94 вопроса, которые ГК «Геоскан» подготовила для функциональных требований к автопилоту квадрокоптера класса tinywhoop. Для каждого вопроса показано, как он решён в ArduPilot, PX4, Betaflight и INAV, с именами параметров. Ответы основаны на опыте гонок и настройки аппаратов.</p><p>Сведения актуальны для ArduCopter 4.7.1, PX4 1.17.0, Betaflight 2026.6.2 и INAV 9.1 на 01.10.2026.</p>
+    <h2>Главное</h2><ul class="dash"><li>7 блоков вопросов: параметры автопилота, OSD, видеоканал, пульт и приёмник, индикация, управление полётом, безопасность.</li><li>Итог — 10 требований к автопилоту для личного зачёта: настройки только на земле, арминг тумблером, двухстадийный failsafe, разряд аккумулятора — только предупреждение.</li><li>Большинство нужных механизмов уже есть в Betaflight — единственной из четырёх прошивок, работающей на эталонных платформах.</li><li>Приложение: соответствие параметров между четырьмя прошивками.</li></ul>
+    <aside class="callout"><div class="h">Что не вошло и ограничения</div><ul class="dash"><li>Автопилот заказчика в сравнение не включён.</li><li>Только личный зачёт: один пилот, один аппарат. Командный зачёт и групповые занятия — тема следующего этапа.</li><li>Эталонные платформы — BETAFPV Air75 II и Meteor75 Pro с заводским Betaflight.</li></ul></aside>
+  </div>
+  <aside class="doc-cover">
+    <a href="UBV-AS-2026-01.pdf"><img src="cover.png" alt="Обложка UBV-AS-2026-01" width="460" height="651"></a>
+    <div class="cap">33 страницы · PDF</div>
+  </aside>
+</article>
+
+</main>
+<footer class="site"><div class="wrap bar">
+  <span>UbVProject · 2026</span>
+  <a href="https://t.me/UbVsevolod" rel="noopener">Telegram-канал @UbVsevolod ↗</a>
+</div></footer>
+</body>
+</html>
